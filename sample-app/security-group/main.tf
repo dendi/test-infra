@@ -43,5 +43,8 @@ module "security_group_ec2" {
     }
   ]
 
-
+  tags = {
+    Terraform   = "true"
+    Environment = "staging"
+  }
 }
